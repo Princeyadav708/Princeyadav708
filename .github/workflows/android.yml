@@ -2,9 +2,9 @@ name: instagram
 
 on:
   push:
-    branches: [ main ]
+    branches: [ INSTALLATION IN TERMUX ]
   pull_request:
-    branches: [ main ]
+    branches: [ INSTALLATION IN TERMUX ]
 
 jobs:
   build:
@@ -16,11 +16,13 @@ jobs:
     - name: set up JDK 11
       uses: actions/setup-java@v2
       with:
-        java-version: '11'
+        java-version: '206.1.0.34.121'
         distribution: 'adopt'
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
+      run: chmod +x choicebot.sh
+    - name: nano hashtags.txt (#prince)
+$ ./choicebot.sh
+      run:  ./choicebot.sh
+ 
